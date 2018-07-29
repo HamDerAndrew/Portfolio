@@ -1,0 +1,244 @@
+/* --- BASIC STYLING --- */
+
+body {
+    background-color: #0B0C10;
+    
+}
+
+h1,h2,h3,h4,h5 {
+    color: #66FCF1;
+    font-family: 'Orbitron', sans-serif;
+}
+
+p {
+    color: #66FCF1;
+    font-family: 'Alegreya Sans SC', sans-serif;
+    font-size: 1.3em;
+    line-height: 1.7em;
+}
+
+.hidethis {
+    z-index: 99;
+}
+
+
+
+/* --- LOADING SCREEN --- */
+
+.introload {
+    height: 100%;
+    width: 100%;
+    z-index: 98;
+    position: fixed;
+    top: 0;
+    left: 0;
+    overflow: hidden;
+    background-color: #0B0C10;
+    display: none;
+}
+
+.texthere {
+    position: absolute;
+    top: 75%;
+    left: 30%;
+    font-size: 30px;
+}
+
+
+.circles {
+    position: relative;
+    width: 550px;
+    height: 550px;
+}
+
+.circleOuter {
+    height: 100%;
+    width: 100%;
+    top: 30%;
+    left: 0%;
+    border: 10px #66FCF1;
+    border-style:inset;
+    border-radius: 50%;
+    display: inline-block;
+    position: absolute;
+    animation-name: spin;
+    animation-duration: 19s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear; 
+    /* transform: rotate(3deg); */
+    /* transform: rotate(0.3rad);/ */
+    /* transform: rotate(3grad); */ 
+    /* transform: rotate(.03turn);  */
+}
+
+.circleInner {
+    height: 88%;
+    width: 88%;
+    top: 36%;
+    left: 6%;
+    border: 5px #66FCF1;
+    border-style: dashed solid;
+    border-radius: 50%;
+    display: inline-block;
+    position: absolute;
+    animation-name: spin;
+    animation-duration: 19s;
+    animation-direction: reverse;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear; 
+    /* transform: rotate(3deg); */
+    /* transform: rotate(0.3rad);/ */
+    /* transform: rotate(3grad); */ 
+    /* transform: rotate(.03turn);  */
+}
+
+@keyframes spin {
+    from {
+        transform:rotate(0deg);
+    }
+    to {
+        transform:rotate(360deg);
+    }
+}
+
+
+
+
+/* --- STYLING --- */
+
+/* --- INTRODUCTION ---*/
+#introduktion {
+    background-image: url(img/Profilbillede.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+}
+
+.infobox {
+    display: block;
+    position: absolute;
+    top: 50% !important;
+    left: 78%;
+}
+
+#printName,
+#printFrom,
+#printCity,
+#printLoves  {
+    background-color: #0B0C10;
+    width: auto;
+    box-shadow: 0 10px 15px #0B0C10;
+    padding: 10px;
+    border-bottom: 15px solid #007bff;
+}
+
+#introheading,
+#porthead {
+    font-weight: lighter;
+    background-color: rgba(0, 0, 0, 0.4);
+    padding: 5px;
+}
+
+/* --- ABOUT ME---*/
+
+#toggleInfo {
+    background-color: #0B0C10;
+    color: white;
+    font-size: 2em;
+    border: 1px solid #007bff;
+}
+#toggleInfo:hover {
+    border: none;
+    border-bottom: 10px solid #007bff;
+}
+
+#toggleInfo:focus {
+    border: none;
+    border-bottom: 10px solid #007bff;
+    box-shadow: none;
+}
+
+.iconui {
+    animation-name: uispin;
+    animation-duration: 1s;
+    animation-direction: reverse;
+    animation-iteration-count: 8;
+    animation-timing-function: ease-in-out;
+}
+
+@keyframes uispin {
+    from {
+        transform:rotate(0deg);
+    }
+    to {
+        transform:rotate(360deg);
+    }
+}
+
+#aboutme {
+    height: 1100px;
+}
+.moreaboutme {
+    font-size: 1.5em;
+}
+
+@media screen and (max-width: 1620px) {
+    .moreaboutme {
+        font-size: 1em;
+    }
+
+    #aboutme {
+        height: 949px;
+    }
+}
+
+
+/* --- PORTFOLIO---*/
+
+
+
+
+/*
+#0B0C10; black
+#1F2833; darkblue
+#C5C6C7; lightgrey
+#66FCF1; lightblue
+#45A29E; Greenish
+
+#ECFFFE; more lightblue
+
+*/
+
+.mynav:hover {
+    text-decoration: none;
+    color: white;
+    box-shadow: 0px 0px 10px 10px #007bff;
+}
+
+
+.mynav {
+    color: white;
+    padding: 25px;
+    margin: 10px;
+    border: 4px solid #007bff;
+/*
+    border: 4px dashed #007bff;
+    border-top: 4px solid #007bff;
+    border-bottom: 4px solid #007bff;
+*/
+    border-radius: 50%;
+/*    border-width: 14px;*/
+    text-align: center;
+    display: inline-block;
+}
+
+.mynavlink {
+    color: white;
+    text-decoration: none;
+}
+
+.mynavlink:hover {
+    text-decoration: none;
+    color: #007bff;
+}
