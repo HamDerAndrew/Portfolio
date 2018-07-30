@@ -159,6 +159,34 @@ p {
     box-shadow: none;
 }
 
+.iconscontainer {
+    width: 50%;
+    height: auto;
+}
+
+.cls-1,
+.cls-2,
+.cls-3 {
+    transform-origin: center;
+}
+
+.cls-1 {
+    fill:#61aaed;
+}
+.cls-2,
+.cls-3 {
+    fill:none;
+    stroke:#61aaed;
+    stroke-miterlimit:10;
+    stroke-width:8px;
+}
+.cls-2 {
+    stroke-dasharray:106.82 26.7;
+}
+.cls-3 {
+    stroke-dasharray:145.04 145.04;
+}
+
 .iconui {
     animation-name: uispin;
     animation-duration: 1s;

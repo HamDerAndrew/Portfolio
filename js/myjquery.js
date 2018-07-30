@@ -38,12 +38,30 @@ var instance = new TypeIt('#printLoves', {
     startDelay: 3200
 });
 
+
+
 var theInfo = document.getElementById('toggleInfo');
 theInfo.addEventListener("click", function() {
-    var iconOne = document.getElementById('UI-one');
-    var iconTwo = document.getElementById('UI-two');
-    iconOne.classList.add("iconui");
-    iconTwo.classList.add("iconui");
+    // var iconOne = document.getElementById('UI-one');
+    // var iconTwo = document.getElementById('UI-two');
+    // iconOne.classList.add("iconui");
+    // iconTwo.classList.add("iconui");
+
+    var svgAttributes = anime({
+        targets: '#uispinning .cls-2',
+        rotate: 360,
+        easing: 'easeInOutCubic',
+        duration: 1000,
+        loop: 8
+    });
+    
+    var svgAttributes = anime({
+        targets: '#uispinning .cls-3',
+        rotate: -360,
+        easing: 'linear',
+        duration: 2000,
+        loop: 4
+    });
 
     var instance = new TypeIt('#myInfo', {
         cursor: false,
