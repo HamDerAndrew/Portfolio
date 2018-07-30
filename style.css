@@ -224,7 +224,10 @@ p {
 
 /* --- PORTFOLIO---*/
 
-
+#portfolioreveal {
+    background-color: #007bff;
+    color: white;
+}
 
 
 /*

@@ -3,6 +3,7 @@ $( document ).ready(function() {
     console.log( "ready!" );
     $(".introload").delay(2500).fadeOut(400);
     $(".hideit").show(); 
+    $(".iconscontainer").hide();
 });
 
 var instance = new TypeIt('#printName', {
@@ -39,13 +40,9 @@ var instance = new TypeIt('#printLoves', {
 });
 
 
-
 var theInfo = document.getElementById('toggleInfo');
 theInfo.addEventListener("click", function() {
-    // var iconOne = document.getElementById('UI-one');
-    // var iconTwo = document.getElementById('UI-two');
-    // iconOne.classList.add("iconui");
-    // iconTwo.classList.add("iconui");
+    $(".iconscontainer").fadeIn();
 
     var svgAttributes = anime({
         targets: '#uispinning .cls-2',
