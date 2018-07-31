@@ -4,6 +4,21 @@ $( document ).ready(function() {
     $(".introload").delay(2500).fadeOut(400);
     $(".hideit").show(); 
     $(".iconscontainer").hide();
+
+var svgAttributes = anime({
+    targets: '#frontspin .fload-2',
+    rotate: -360,
+    easing: 'linear',
+    duration: 20000,
+    loop: true
+});
+
+var svgAttributes = anime({
+    targets: '#frontspin .fload-3',
+    rotate: 360,
+    easing: 'linear',
+    duration: 20000,
+    loop: true
 });
 
 var instance = new TypeIt('#printName', {
@@ -38,6 +53,8 @@ var instance = new TypeIt('#printLoves', {
     speed: 30,
     startDelay: 3200
 });
+
+var clickLayer;
 
 
 var theInfo = document.getElementById('toggleInfo');
@@ -76,7 +93,4 @@ theInfo.addEventListener("click", function() {
         .type("I have a thing for futuristic UI design, probably because I love Sci-Fi and draw a lot of inspiration from there.");
 });
 
-
-
-
-
+});

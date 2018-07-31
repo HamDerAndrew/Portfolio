@@ -31,8 +31,18 @@
 <div class="hidethis animated fadeIn">
     
     <section class="container-fluid" id="introduktion">
+
         <div class="row">
-            <div class="col-xs-12 col-sm-12">
+                <div class="sideelements col-sm-2">
+                        <div>
+                            <svg id="frontspin" viewBox="0 0 134 134">
+                                <circle class="fload-1" cx="67" cy="67" r="34"/>
+                                <circle class="fload-2" cx="67" cy="67" r="44.86"/>
+                                <circle class="fload-3" cx="67" cy="67" r="62"/>
+                            </svg>
+                        </div>
+                     </div>
+            <div class="col-xs-12 col-sm-10">
                 <div class="infobox animated zoomIn float-right">
                     <h3 class="mt-4 t" id="printName"></h3>
                         <br />
@@ -43,13 +53,10 @@
                     <h3 class="mt-4 t" id="printLoves"></h3>
                         <br />
                 </div>
-                <!-- <div class="circleboxOne">
-                    <div class="circle"></div>
-                </div> -->
             </div>
             <!-- <div class="col-xs-12 col-sm-6 animated fadeIn">
-                <div class="imgbox">
-                    <img src=" ../website/img/Profilbillede.jpg" class="img-fluid introimg">
+                <div class="imgbox float-left">
+                    <img src=" ../website/img/Profilbillede.jpg" class="introimg w-50">
                 </div>
             </div> -->
         </div>
@@ -61,13 +68,11 @@
                     <div class="row">
                     <div class="col-sm-4">
                         <div class="iconscontainer">
-                            <div id="test">
                             <svg id="uispinning"viewBox="0 0 285 285">
                                 <circle class="cls-1" cx="143" cy="142" r="50"/>
                                 <circle class="cls-2" cx="143" cy="142" r="85"/>
                                 <circle class="cls-3" cx="142.5" cy="142.5" r="138.5"/>
                             </svg>
-                            </div>
                         </div>
                     </div>
                     <div class="col-sm-4 mt-5">
@@ -78,7 +83,6 @@
                     </div>
                     <div class="col-sm-4">
                         <div class="iconscontainer float-right">
-                            <div id="testTwo">
                             <svg id="uispinning"viewBox="0 0 285 285">
                                 <circle class="cls-1" cx="143" cy="142" r="50"/>
                                 <circle class="cls-2" cx="143" cy="142" r="85"/>
@@ -87,16 +91,17 @@
                         </div>
                     </div>
                     </div>
-                    </div>
                 </div>
     </section>
 
     <section class="container-fluid" id="portfolio">
-            <h1 class="animated fadeInRight" id="porthead">PORTFOLIO //</h1>
-            <h3 class="mx-auto w-50 text-center">Check out my portfolio!</h3>
-            <div class="portfoliocontainer">
-            <button id="portfolioreveal" type="button" class="btn btn-lg btn-block mb-3">LOAD INFO</button>
-        </div>
+        <h1 class="animated fadeInRight" id="porthead">PORTFOLIO //</h1>
+            <h3 class="mx-auto w-50 text-center mb-3">Check out my portfolio!</h3>
+                <div class="portfoliocontainer">
+                    <div id="coverlayer" class="btncon text-center">
+                        <button id="portfolioreveal" type="button" class="btn">LOAD PORTFOLIO</button>
+                    </div>
+                </div>
     </section>
 
     <section class="container-fluid" id="contact">

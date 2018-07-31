@@ -6,12 +6,12 @@ body {
 }
 
 h1,h2,h3,h4,h5 {
-    color: #66FCF1;
+    color: #78c0f4;
     font-family: 'Orbitron', sans-serif;
 }
 
 p {
-    color: #66FCF1;
+    color: #3476a6;
     font-family: 'Alegreya Sans SC', sans-serif;
     font-size: 1.3em;
     line-height: 1.7em;
@@ -108,18 +108,31 @@ p {
 
 /* --- INTRODUCTION ---*/
 #introduktion {
-    background-image: url(img/Profilbillede.jpg);
+    background-color: #0B0C10;
+    /* background-image: url(img/intro\ background.svg); */
     background-position: center;
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: cover; 
+    position: relative;
     height: 100vh;
 }
 
+.fload-1,
+.fload-2,
+.fload-3{fill:none;stroke:#3476a6;stroke-miterlimit:10;}
+.fload-1,
+.fload-2{stroke-width:5px;}
+.fload-2{stroke-dasharray:93.92 46.96;}
+.fload-3{stroke-width:10px;stroke-dasharray:64.92 64.92;}
+
+.introimg {
+    border: 5px solid #78c0f4;
+}
+
 .infobox {
-    display: block;
     position: absolute;
-    top: 50% !important;
-    left: 78%;
+    display: block;
+    left: 50%;
 }
 
 #printName,
@@ -134,7 +147,8 @@ p {
 }
 
 #introheading,
-#porthead {
+#porthead,
+#contact {
     font-weight: lighter;
     background-color: rgba(0, 0, 0, 0.4);
     padding: 5px;
@@ -166,7 +180,10 @@ p {
 
 .cls-1,
 .cls-2,
-.cls-3 {
+.cls-3,
+.fload-1,
+.fload-2,
+.fload-3 {
     transform-origin: center;
 }
 
@@ -223,23 +240,23 @@ p {
 
 
 /* --- PORTFOLIO---*/
+#portfolio {
+    height: 550px;
+    position: relative;
+}
 
 #portfolioreveal {
     background-color: #007bff;
     color: white;
+    padding: 35px 140px;
+    border-radius: 10px;
+    margin: 8% auto;
 }
 
 
-/*
-#0B0C10; black
-#1F2833; darkblue
-#C5C6C7; lightgrey
-#66FCF1; lightblue
-#45A29E; Greenish
 
-#ECFFFE; more lightblue
 
-*/
+
 
 .mynav:hover {
     text-decoration: none;
@@ -273,3 +290,19 @@ p {
     text-decoration: none;
     color: #007bff;
 }
+
+.colors {
+    color: #3476a6;
+    color: #78c0f4;
+    color: #3fa9f5;
+    color: #333333;
+    color: #202020;
+    
+    }
+    
+    /* Dark blue #3476a6
+    Light blue #78c0f4
+    Blue #3fa9f5
+    
+    Grey #333333
+    Dark grey #202020 */
