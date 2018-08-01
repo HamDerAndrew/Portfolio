@@ -109,7 +109,6 @@ p {
 /* --- INTRODUCTION ---*/
 #introduktion {
     background-color: #0B0C10;
-    /* background-image: url(img/intro\ background.svg); */
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover; 
@@ -131,8 +130,19 @@ p {
 
 .infobox {
     position: absolute;
-    display: block;
-    left: 50%;
+    top: 20%;
+    left: 20%;
+}
+
+.ad-1{fill:none;stroke:#3476a4;stroke-miterlimit:10;stroke-width:2px;}
+
+.arrowcon{
+    position: relative;
+}
+
+.arrowDown {
+    margin: auto 30px;
+    height: 100px;
 }
 
 #printName,
@@ -140,10 +150,9 @@ p {
 #printCity,
 #printLoves  {
     background-color: #0B0C10;
-    width: auto;
     box-shadow: 0 10px 15px #0B0C10;
     padding: 10px;
-    border-bottom: 15px solid #007bff;
+    border-bottom: 3px solid #007bff;
 }
 
 #introheading,

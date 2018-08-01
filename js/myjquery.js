@@ -54,6 +54,16 @@ var instance = new TypeIt('#printLoves', {
     startDelay: 3200
 });
 
+var lineDrawing = anime({
+    targets: '#arrowDownId path',
+    strokeDashoffset: [anime.setDashoffset, 0],
+    easing: 'easeInOutSine',
+    duration: 1000,
+    delay: 3000,
+    direction: 'alternate',
+    loop: false
+});
+
 var clickLayer;
 
 
