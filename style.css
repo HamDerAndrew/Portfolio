@@ -192,7 +192,9 @@ p {
 .cls-3,
 .fload-1,
 .fload-2,
-.fload-3 {
+.fload-3,
+.cIconCircle,
+.cIconCircle2 {
     transform-origin: center;
 }
 
@@ -248,10 +250,15 @@ p {
 }
 
 
-/* --- PORTFOLIO---*/
+/* --- PORTFOLIO ---*/
 #portfolio {
     height: 550px;
     position: relative;
+    background-color: blueviolet;
+    /* background-image: url("img/intro\ background.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain; */
 }
 
 #portfolioreveal {
@@ -262,11 +269,53 @@ p {
     margin: 8% auto;
 }
 
+/* --- CONTACT --- */
+
+#socialIcon,
+#socialIcon2 {
+    fill:#fff;
+    stroke:#202020;
+    stroke-miterlimit:10;
+    cursor: pointer;
+    }
+
+/*global contact icon style*/
+.cIconCircle,
+.cIconCircle2 {
+    fill:none;
+    stroke:#3476a6;
+    stroke-width:15px;
+    stroke-dasharray:238.25 142.95;
+    stroke-miterlimit:10;
+    }
+
+#socialIcon:hover,
+#socialIcon2:hover{
+    transition: .5s;
+    fill:#78c0f4;
+    transform: scale(1.1, 1.1);
+}
+
+/*LinkedInn*/
+.textpart{stroke-miterlimit:10;}
+
+.textpart{fill:#fff;}
+
+.liInner{stroke:#000;}
+
+.textpart {
+    font-size:245px;
+    fill:#202020;
+    font-family:OpenSans-Bold, Open Sans;
+    font-weight:700;
+}
 
 
 
 
 
+
+/* Nav */
 .mynav:hover {
     text-decoration: none;
     color: white;

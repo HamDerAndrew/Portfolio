@@ -64,6 +64,45 @@ var lineDrawing = anime({
     loop: false
 });
 
+// Soical icon animations start --------
+var cIcons = document.getElementById("github");
+    
+cIcons.addEventListener('mouseenter', function() {
+    var unitlessValue = anime({
+        targets: '#socialIcon .cIconCircle',
+        duration: 3000,
+        rotate: '90',
+    });
+});
+
+
+cIcons.addEventListener('mouseleave', function() {
+    var unitlessValue = anime({
+        targets: '#socialIcon .cIconCircle',
+        duration: 3000,
+        rotate: '-90',
+    });
+});
+
+var cIcons2 = document.getElementById("linked");
+    
+cIcons2.addEventListener('mouseenter', function() {
+    var unitlessValue = anime({
+        targets: '#socialIcon2 .cIconCircle2',
+        duration: 3000,
+        rotate: '90'
+    });
+});
+
+cIcons2.addEventListener('mouseleave', function() {
+    var unitlessValue = anime({
+        targets: '#socialIcon2 .cIconCircle2',
+        duration: 3000,
+        rotate: '-90'
+    });
+});
+// Social ocon animations end -----------
+
 var clickLayer;
 
 
