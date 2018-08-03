@@ -5,6 +5,32 @@ $( document ).ready(function() {
     $(".hideit").show(); 
     $(".iconscontainer").hide();
 
+$(".arrowLink").delay(4000).fadeIn(1000);
+
+  // Add smooth scrolling to all links
+  $("a").on('click', function(event) {
+
+    // Make sure this.hash has a value before overriding default behavior
+    if (this.hash !== "") {
+      // Prevent default anchor click behavior
+      event.preventDefault();
+
+      // Store hash
+      var hash = this.hash;
+
+      // Using jQuery's animate() method to add smooth page scroll
+      // The optional number (800) specifies the number of milliseconds 
+      // it takes to scroll to the specified area
+      $('html, body').animate({
+        scrollTop: $(hash).offset().top
+      }, 800, function(){
+   
+        // Add hash (#) to URL when done scrolling (default click behavior)
+        window.location.hash = hash;
+      });
+    } // End if
+  });
+
 var svgAttributes = anime({
     targets: '#frontspin .fload-2',
     rotate: -360,
@@ -54,15 +80,6 @@ var instance = new TypeIt('#printLoves', {
     startDelay: 3200
 });
 
-var lineDrawing = anime({
-    targets: '#arrowDownId path',
-    strokeDashoffset: [anime.setDashoffset, 0],
-    easing: 'easeInOutSine',
-    duration: 1000,
-    delay: 3000,
-    direction: 'alternate',
-    loop: false
-});
 
 // Soical icon animations start --------
 var cIcons = document.getElementById("github");
@@ -121,7 +138,8 @@ cIcons3.addEventListener('mouseleave', function() {
 });
 // Social ocon animations end -----------
 
-var clickLayer;
+
+
 
 
 var theInfo = document.getElementById('toggleInfo');
@@ -132,7 +150,7 @@ theInfo.addEventListener("click", function() {
         targets: '#uispinning .cls-2',
         rotate: 360,
         easing: 'easeInOutCubic',
-        duration: 1000,
+        duration: 1100,
         loop: 8
     });
     
@@ -140,9 +158,24 @@ theInfo.addEventListener("click", function() {
         targets: '#uispinning .cls-3',
         rotate: -360,
         easing: 'linear',
-        duration: 2000,
+        duration: 2100,
         loop: 4
     });
+
+    var alternate = anime({
+        targets: '#gui, #gui2',
+        translateY: 530,
+        duration: 1000,
+        easing: 'linear',
+        direction: 'alternate',
+        loop: 9
+      });
+
+      function hideSquare() {
+        document.getElementById('gui').style.opacity="0";
+        document.getElementById('gui2').style.opacity="0";
+      }
+      setTimeout(hideSquare, 9500);
 
     var instance = new TypeIt('#myInfo', {
         cursor: false,
@@ -153,7 +186,7 @@ theInfo.addEventListener("click", function() {
         .pause(500)
         .break()
         .break()
-        .type("I love working with Frontend technologies like <strong>React</strong>, <strong>Bootstrap</strong>, <strong>Angular</strong> and more. I do, however, find backend development a bit more exciting.")
+        .type("I love working with Frontend technologies like <strong>React</strong>, <strong>Bootstrap</strong>, and more. I do, however, find backend development with <strong>PHP</strong> or <strong>Python</strong> very interesting aswell.")
         .pause(500)
         .break()
         .break()
