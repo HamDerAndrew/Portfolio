@@ -194,7 +194,8 @@ p {
 .fload-2,
 .fload-3,
 .cIconCircle,
-.cIconCircle2 {
+.cIconCircle2,
+.cIconCircle3 {
     transform-origin: center;
 }
 
@@ -272,7 +273,8 @@ p {
 /* --- CONTACT --- */
 
 #socialIcon,
-#socialIcon2 {
+#socialIcon2,
+#socialIcon3 {
     fill:#fff;
     stroke:#202020;
     stroke-miterlimit:10;
@@ -281,7 +283,8 @@ p {
 
 /*global contact icon style*/
 .cIconCircle,
-.cIconCircle2 {
+.cIconCircle2,
+.cIconCircle3 {
     fill:none;
     stroke:#3476a6;
     stroke-width:15px;
@@ -290,7 +293,8 @@ p {
     }
 
 #socialIcon:hover,
-#socialIcon2:hover{
+#socialIcon2:hover,
+#socialIcon3:hover{
     transition: .5s;
     fill:#78c0f4;
     transform: scale(1.1, 1.1);
@@ -310,7 +314,34 @@ p {
     font-weight:700;
 }
 
+.textpart2 {
+    stroke-miterlimit:10;
+}
+.textpart2 {
+    fill:#202020;
+}
+.textpart2 {
+    font-size:183px;
+    font-family:OpenSans-Bold, Open Sans;
+    font-weight:700;
+}
 
+.somelist {
+    list-style: none;
+    padding: 0px;
+}
+
+.socialLi { 
+    display: inline;
+    margin: 30px;
+}
+
+#socialIcon,
+#socialIcon2,
+#socialIcon3 {
+    width: 10em;
+    height: auto;
+}
 
 
 

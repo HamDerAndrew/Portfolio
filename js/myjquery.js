@@ -101,6 +101,24 @@ cIcons2.addEventListener('mouseleave', function() {
         rotate: '-90'
     });
 });
+
+var cIcons3 = document.getElementById("myCv");
+    
+cIcons3.addEventListener('mouseenter', function() {
+    var unitlessValue = anime({
+        targets: '#socialIcon3 .cIconCircle3',
+        duration: 3000,
+        rotate: '90'
+    });
+});
+
+cIcons3.addEventListener('mouseleave', function() {
+    var unitlessValue = anime({
+        targets: '#socialIcon3 .cIconCircle3',
+        duration: 3000,
+        rotate: '-90'
+    });
+});
 // Social ocon animations end -----------
 
 var clickLayer;
