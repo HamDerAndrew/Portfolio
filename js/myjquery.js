@@ -140,8 +140,6 @@ cIcons3.addEventListener('mouseleave', function() {
 
 
 
-
-
 var theInfo = document.getElementById('toggleInfo');
 theInfo.addEventListener("click", function() {
     $(".iconscontainer").fadeIn();
@@ -182,7 +180,7 @@ theInfo.addEventListener("click", function() {
         speed: 15,
         autoStart: false,
         })
-        .type("Low on workexperience, but high on the will to learn and push myself even further within webdevelopment. Forever learning and improving to be the best version of myself.")
+        .type("Low on workexperience, but high on the will to learn and push myself even further within webdevelopment. I thrive whether I work in teams or alone.")
         .pause(500)
         .break()
         .break()
