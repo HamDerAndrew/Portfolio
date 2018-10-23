@@ -1,8 +1,8 @@
 /* --- BASIC STYLING --- */
 
 body {
-    background-image: url("img/introbg.jpg.png");
-    /* background-color: #202020; */
+    /* background-image: url("img/introbg.jpg.png"); */
+    background-color: #180f0f;
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;

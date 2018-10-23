@@ -180,7 +180,7 @@ theInfo.addEventListener("click", function() {
         speed: 15,
         autoStart: false,
         })
-        .type("Low on workexperience, but high on the will to learn and push myself even further within web- and softwaredevelopment. I thrive whether I work in teams or alone.")
+        .type("Low on workexperience, but high on the will to learn and push myself even further within web- and softwaredevelopment.")
         .pause(500)
         .break()
         .break()
