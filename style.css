@@ -124,7 +124,8 @@ p {
     background-repeat: no-repeat;
     background-size: cover; 
     position: relative; */
-    height: 100vh;
+    height: 90%;
+    padding-top: 130px;
 }
 
 .pinfo {
@@ -135,21 +136,47 @@ p {
     font-weight: bold;
 }
 
-
-
-@media screen and (min-width: 960px) {
-    .introAnimation {
-        position: absolute;
-        top: 25%;
-        left: 20%;
+@media screen and (max-width: 1099px) {
+    #introduktion {
+        padding-top: 40px;
     }
-    
-    .introBox {
-        position: absolute;
-        top: 25%;
-        left: 50%;
+
+    .introflex {
+        justify-content: center;
+    }
+
+    .introbox {
+        margin-top: 10%;
+    }
+
+    .pinfo {
+        
+    }
+    .motherflex {
+        flex-wrap: wrap;
     }
 }
+
+@media screen and (max-height: 799px) {
+    #introduktion {
+        height: auto;
+    }
+}
+
+
+.introflex {
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+.introAnimation {
+    justify-content: center;
+}
+
+.spinbox {
+    width: 50%;
+}
+
 
 .fload-1,
 .fload-2,
@@ -179,9 +206,7 @@ p {
 
 #arrowDownId {
     width: 3em;
-    position: absolute;
-    top: 85%;
-    left: 50%;
+    margin: 10% auto;
 }
 
 #arrowDownId:hover {
@@ -190,7 +215,7 @@ p {
 }
 
 #frontspin {
-    width: 50%;
+    width: 100%;
 }
 
 
