@@ -139,7 +139,7 @@ cIcons3.addEventListener('mouseleave', function() {
 // Social ocon animations end -----------
 
 
-
+var loadtimes = 0;
 var theInfo = document.getElementById('toggleInfo');
 theInfo.addEventListener("click", function() {
     $(".iconscontainer").fadeIn();
@@ -174,6 +174,12 @@ theInfo.addEventListener("click", function() {
         document.getElementById('gui2').style.opacity="0";
       }
       setTimeout(hideSquare, 9500);
+      
+      loadtimes += 1;
+
+      if(loadtimes >= 2) {
+        location.reload();
+      }
 
     var instance = new TypeIt('#myInfo', {
         cursor: false,
