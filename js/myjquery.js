@@ -164,17 +164,18 @@ theInfo.addEventListener("click", function() {
         targets: '#gui, #gui2',
         translateY: 530,
         duration: 1000,
-        easing: 'linear',
+        easing: 'easeInOutQuad',
         direction: 'alternate',
         loop: 9
       });
 
       function hideSquare() {
-        document.getElementById('gui').style.opacity="0";
-        document.getElementById('gui2').style.opacity="0";
+        $(".iconscontainer").hide(300);
+        $('#gui').hide(300);
+        $('#gui2').hide(300);
       }
-      setTimeout(hideSquare, 9500);
-      
+      setTimeout(hideSquare, 8900);
+
       loadtimes += 1;
 
       if(loadtimes >= 2) {
@@ -186,11 +187,11 @@ theInfo.addEventListener("click", function() {
         speed: 15,
         autoStart: false,
         })
-        .type("Low on workexperience, but high on the will to learn and push myself even further within web- and softwaredevelopment.")
+        .type("Low on workexperience, but high on the will to learn and push myself even further as a developer.")
         .pause(500)
         .break()
         .break()
-        .type("I love working with Frontend technologies like <strong>React</strong>, <strong>Bootstrap</strong>, and more. I do, however, find backend development with <strong>PHP</strong> or <strong>Python</strong> very interesting aswell.")
+        .type("I've always loved to build stuff. Started out with LEGO as a child, and now for the web with HTML, CSS and JS")
         .pause(500)
         .break()
         .break()
