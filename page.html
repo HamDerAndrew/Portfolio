@@ -169,6 +169,44 @@
 
     <section class="container-fluid" id="portfolio">
         <h1 class="animated fadeInRight" id="porthead">PORTFOLIO //</h1> 
+        <div id="carouselExampleIndicators" class="carousel slide w-75 mx-auto" data-ride="carousel">
+            <ol class="carousel-indicators">
+              <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+              <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+              <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+            </ol>
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <a href="https://github.com/HamDerAndrew/Login-system" class="d-block w-100 portimg"><img class="d-block w-100" src="/img/project-1.jpg" alt="First slide"></a>
+                <div class="carousel-caption d-none d-md-block bg-dark">
+                    <h5>PHP Log-in system</h5>
+                    <p>Basic log-in system made with PHP and Bootstrap. The project is not live, but downloadable from GitHub.</p>
+                  </div>
+              </div>
+              <div class="carousel-item">
+                <a href="http://alarsen.one/quotes/" class="d-block w-100 portimg"><img class="d-block w-100" src="/img/project-2.jpg" alt="Second slide"></a>
+                <div class="carousel-caption d-none d-md-block  bg-dark">
+                    <h5><a href="http://alarsen.one/quotes/">Vue Js Quote Creator</a></h5>
+                    <p>A simple Vue js app that let's you write quotes and post them. There is no back-end to save the quotes, so once you refresh, they disappear</p>
+                  </div>
+              </div>
+              <div class="carousel-item">
+                <a href="http://alarsen.one/eprototype/" class="d-block w-100 portimg"><img class="d-block w-100" src="/img/project-3.jpg" alt="Third slide"></a>
+                <div class="carousel-caption d-none d-md-block bg-dark">
+                    <h5>Vue E-Commerce (prototype)</h5>
+                    <p>A prototype for an E-Commerce website. Little functionality and not responsive. Data from products are being loaded from a database via a REST API.</p>
+                  </div>
+              </div>
+            </div>
+            <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="sr-only">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="sr-only">Next</span>
+            </a>
+          </div>
     </section>
 
     <footer class="container-fluid" id="contact">
