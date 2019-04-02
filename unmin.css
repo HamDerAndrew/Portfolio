@@ -1,0 +1,439 @@
+/* --- BASIC STYLING --- */
+
+body {
+    background-color: #180f0f;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+}
+
+h1,h2 {
+    color: #78c0f4;
+    font-family: 'Orbitron', sans-serif;
+}
+
+h3,h4,h5 {
+    color: #78c0f4;
+    font-family: 'Roboto', sans-serif;
+}
+
+p {
+    color: #3476a6;
+    font-family: sans-serif;
+    font-size: 1.3em;
+    line-height: 1.7em;
+}
+
+.hidethis {
+    z-index: 99;
+}
+
+
+
+/* --- LOADING SCREEN --- */
+
+.introload {
+    height: 100%;
+    width: 100%;
+    z-index: 98;
+    position: fixed;
+    top: 0;
+    left: 0;
+    overflow: hidden;
+    background-color: #0B0C10;
+    display: none;
+}
+
+.texthere {
+    position: absolute;
+    top: 75%;
+    left: 30%;
+    font-size: 30px;
+}
+
+
+.circles {
+    position: relative;
+    width: 550px;
+    height: 550px;
+}
+
+.circleOuter {
+    height: 100%;
+    width: 100%;
+    top: 30%;
+    left: 0%;
+    border: 10px #66FCF1;
+    border-style:inset;
+    border-radius: 50%;
+    display: inline-block;
+    position: absolute;
+    animation-name: spin;
+    animation-duration: 19s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear; 
+}
+
+.circleInner {
+    height: 88%;
+    width: 88%;
+    top: 36%;
+    left: 6%;
+    border: 5px #66FCF1;
+    border-style: dashed solid;
+    border-radius: 50%;
+    display: inline-block;
+    position: absolute;
+    animation-name: spin;
+    animation-duration: 19s;
+    animation-direction: reverse;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear; 
+}
+
+@keyframes spin {
+    from {
+        transform:rotate(0deg);
+    }
+    to {
+        transform:rotate(360deg);
+    }
+}
+
+
+
+
+/* --- STYLING --- */
+
+/* --- INTRODUCTION ---*/
+#introduktion {
+    
+    padding-top: 80px;
+}
+
+.pinfo {
+    line-height: 2;
+    font-size: 3.5em;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+@media screen and (max-height: 799px) {
+    #introduktion {
+        height: auto;
+    }
+}
+
+.spinbox {
+    width: 30%;
+    margin: auto;
+}
+
+
+.fload-1,
+.fload-2,
+.fload-3{fill:none;stroke:#3476a6;stroke-miterlimit:10;}
+.fload-1,
+.fload-2{stroke-width:5px;}
+.fload-2{stroke-dasharray:93.92 46.96;}
+.fload-3{stroke-width:10px;stroke-dasharray:64.92 64.92;}
+
+.ad-1 {
+    stroke:#3476a4;
+    stroke-miterlimit:10;
+    stroke-width:2px;
+    fill: #3476a4;
+
+}
+
+.arrowLink {
+    display: none;
+    padding-bottom: 60px;
+}
+
+.arrowLink .fas {
+    font-size: 2em;
+}
+
+#arrowDownId:hover,
+.ad-1:hover {
+    fill: #78c0f4;
+    transition: .2s;
+}
+
+#arrowDownId {
+    width: 3em;
+    margin: 10% auto;
+}
+
+#arrowDownId:hover {
+    transform: scale(1.1, 1.1);
+    transition: .2s;
+}
+
+#frontspin {
+    width: 100%;
+}
+
+
+#printName {
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+#introheading,
+#porthead,
+#contact {
+    font-weight: lighter;
+    background-color: rgba(0, 0, 0, 0.4);
+    padding: 5px;
+}
+
+/* --- ABOUT ME---*/
+
+#toggleInfo {
+    background-color: #202020;
+    color: white;
+    font-size: 2em;
+    border: 1px solid #007bff;
+}
+#toggleInfo:hover {
+    border: none;
+    border-bottom: 10px solid #007bff;
+    transition: .2s;
+}
+
+#toggleInfo:focus {
+    border: none;
+    border-bottom: 10px solid #007bff;
+    box-shadow: none;
+}
+
+.iconscontainer {
+    width: 50%;
+    height: auto;
+}
+
+.cls-1,
+.cls-2,
+.cls-3,
+.fload-1,
+.fload-2,
+.fload-3,
+.cIconCircle,
+.cIconCircle2,
+.cIconCircle3 {
+    transform-origin: center;
+}
+
+.cls-1 {
+    fill:#61aaed;
+}
+.cls-2,
+.cls-3 {
+    fill:none;
+    stroke:#61aaed;
+    stroke-miterlimit:10;
+    stroke-width:8px;
+}
+.cls-2 {
+    stroke-dasharray:106.82 26.7;
+}
+.cls-3 {
+    stroke-dasharray:145.04 145.04;
+}
+
+
+#aboutme {
+    height: 1100px;
+    background-color: #202020;
+}
+
+.moreaboutme {
+    font-size: 1.5em;
+}
+
+@media screen and (max-width: 1620px) {
+    .moreaboutme {
+        font-size: 1em;
+    }
+
+    #aboutme {
+        height: 949px;
+    }
+}
+
+.guifade{
+    transition: 1s;
+    opacity: 1;
+}
+
+#gui,
+#gui2 {
+    height: 60px;
+    width: 30px;
+    background-color: #007bff;
+}
+
+/* --- PORTFOLIO ---*/
+#skills {
+    position: relative;
+    background-color: #202020;
+}
+
+.portimg {
+    opacity: 0.8;
+}
+
+.carousel-caption {
+    box-shadow: 1px 10px 10px black;
+}
+
+#pythonsvg,
+#phpsvg,
+#reactsvg,
+#htmlsvg,
+#csssvg,
+#jssvg,
+#jquerysvg,
+#githubsvg,
+#wpsvg {
+    width: 20%;
+}
+
+.centerstyle {
+    text-align: center!important;
+    margin: 15px auto;
+}
+
+.skillscontainer {
+    padding-top: 5em;
+    padding-bottom: 5em;
+}
+
+
+
+/* --- CONTACT --- */
+
+#socialIcon,
+#socialIcon2,
+#socialIcon3 {
+    fill:#fff;
+    stroke:#202020;
+    stroke-miterlimit:10;
+    cursor: pointer;
+    }
+
+/*global contact icon style*/
+.cIconCircle,
+.cIconCircle2,
+.cIconCircle3 {
+    fill:none;
+    stroke:#3476a6;
+    stroke-width:15px;
+    stroke-dasharray:238.25 142.95;
+    stroke-miterlimit:10;
+    }
+
+#socialIcon:hover,
+#socialIcon2:hover,
+#socialIcon3:hover{
+    transition: .5s;
+    fill:#78c0f4;
+    transform: scale(1.1, 1.1);
+}
+
+/*LinkedInn*/
+.textpart{stroke-miterlimit:10;}
+
+.textpart{fill:#fff;}
+
+.liInner{stroke:#000;}
+
+.textpart {
+    font-size:245px;
+    fill:#202020;
+    font-family:OpenSans-Bold, Open Sans;
+    font-weight:700;
+}
+
+.textpart2 {
+    stroke-miterlimit:10;
+}
+.textpart2 {
+    fill:#202020;
+}
+.textpart2 {
+    font-size:183px;
+    font-family:OpenSans-Bold, Open Sans;
+    font-weight:700;
+}
+
+.somelist {
+    list-style: none;
+    padding: 0px;
+}
+
+.socialLi { 
+    display: inline-block;
+    margin: auto;
+    margin-left: 20px;
+}
+
+#socialIcon,
+#socialIcon2,
+#socialIcon3 {
+    width: 5em;
+    height: auto;
+}
+
+.sociallink {
+    width: 50%;
+    margin: auto;
+}
+
+.stuff {
+    padding: 4em 0;
+    width: 80%;
+}
+
+
+/* Nav */
+.mynav:hover {
+    text-decoration: none;
+    color: white;
+    box-shadow: 0px 0px 10px 10px #007bff;
+}
+
+
+.mynav {
+    color: white;
+    padding: 25px;
+    margin: 10px;
+    border: 4px solid #007bff;
+    border-radius: 50%;
+    text-align: center;
+    display: inline-block;
+}
+
+.mynavlink {
+    color: white;
+    text-decoration: none;
+}
+
+.mynavlink:hover {
+    text-decoration: none;
+    color: #007bff;
+}
+
+.colors {
+    color: #3476a6;
+    color: #78c0f4;
+    color: #3fa9f5;
+    color: #333333;
+    color: #202020;
+    
+    }
