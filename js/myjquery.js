@@ -5,7 +5,7 @@ $( document ).ready(function() {
     $(".hideit").show(); 
     $(".iconscontainer").hide();
 
-$(".arrowLink").delay(4000).fadeIn(1000);
+$(".arrowLink").delay(2000).fadeIn(1000);
 
   // Add smooth scrolling to all links
   $("a").on('click', function(event) {
@@ -48,40 +48,16 @@ var svgAttributes = anime({
 });
 
 var instance = new TypeIt('#printName', {
-    strings: ['Name // André Larsen'],
+    strings: ['// André Larsen'],
     cursor: false,
     breakLines: false,
-    speed: 30,
+    speed: 70,
     startDelay: 500
     
 });
 
-var instance = new TypeIt('#printFrom', {
-    strings: ['From // Denmark'],
-    cursor: false,
-    breakLines: false,
-    speed: 30,
-    startDelay: 1500
-});
 
-var instance = new TypeIt('#printCity', {
-    strings: ['City // Svendborg'],
-    cursor: false,
-    breakLines: false,
-    speed: 30,
-    startDelay: 2500
-});
-
-var instance = new TypeIt('#printLoves', {
-    strings: ['Loves // Technology'],
-    cursor: false,
-    breakLines: false,
-    speed: 30,
-    startDelay: 3200
-});
-
-
-// Soical icon animations start --------
+// Social icon animations start --------
 var cIcons = document.getElementById("github");
     
 cIcons.addEventListener('mouseenter', function() {
@@ -136,7 +112,7 @@ cIcons3.addEventListener('mouseleave', function() {
         rotate: '-90'
     });
 });
-// Social ocon animations end -----------
+// Social icons animations end -----------
 
 
 var loadtimes = 0;
@@ -187,15 +163,15 @@ theInfo.addEventListener("click", function() {
         speed: 15,
         autoStart: false,
         })
-        .type("Low on workexperience, but high on the will to learn and push myself even further as a developer.")
+        .type("Jeg læser på professionsbacheloren Webudvikling på UCL Odense og søger praktikplads fra august 2019.")
         .pause(500)
         .break()
         .break()
-        .type("I've always loved to build stuff. Started out with LEGO as a child, and now for the web with HTML, CSS and JS")
+        .type("Jeg har arbejdet bredt med webudvikling - ligefra hjemmesider og applikationer i WordPress, til native apps i Xamarin Forms.")
         .pause(500)
         .break()
         .break()
-        .type("I have a thing for futuristic UI design, probably because I love Sci-Fi and draw a lot of inspiration from there.");
+        .type("Mit ultimative mål er at kunne associere mig som en 'Full-Stack' udvikler og med det som min drivkraft er jeg klar til at tilføje værdi i din/jeres virksomhed. ");
 });
 
 });
