@@ -163,15 +163,15 @@ theInfo.addEventListener("click", function() {
         speed: 15,
         autoStart: false,
         })
-        .type("Jeg læser på professionsbacheloren Webudvikling på UCL Odense og søger praktikplads fra august 2019.")
+        .type("Udannet PBA i Webudvikling i januar 2020 og nu på jagt efter et job, hvor jeg kan tilbyde min erfaring.")
         .pause(500)
         .break()
         .break()
-        .type("Jeg har arbejdet bredt med webudvikling - ligefra hjemmesider og applikationer i WordPress, til native apps i Xamarin Forms.")
+        .type("Jeg har arbejdet bredt med webudvikling - ligefra hjemmesider i WordPress og SPA i Vue.js, til native apps i Xamarin Forms og React Native.")
         .pause(500)
         .break()
         .break()
-        .type("Mit ultimative mål er at kunne associere mig som en 'Full-Stack' udvikler og med det som min drivkraft er jeg klar til at tilføje værdi i din/jeres virksomhed.")
+        .type("Mit ultimative mål er at kunne associere mig som en 'Full-Stack' udvikler og med det, som min drivkraft, er jeg klar til at tilføje værdi i Din/Deres virksomhed.")
 });
 
 });
