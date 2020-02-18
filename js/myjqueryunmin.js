@@ -171,7 +171,7 @@ theInfo.addEventListener("click", function() {
         .pause(500)
         .break()
         .break()
-        .type("Mit ultimative mål er at kunne associere mig som en 'Full-Stack' udvikler og med det som min drivkraft er jeg klar til at tilføje værdi i din/jeres virksomhed. ");
+        .type("Mit ultimative mål er at kunne associere mig som en 'Full-Stack' udvikler og med det som min drivkraft er jeg klar til at tilføje værdi i din/jeres virksomhed.")
 });
 
 });
